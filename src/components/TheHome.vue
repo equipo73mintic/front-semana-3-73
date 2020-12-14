@@ -31,7 +31,7 @@
         </h3>
         <hr>
         <p>
-            Nombre: {{ user.nombre }}
+            Nombre: {{ user.name }}
         </p>
         <p>
             Email: {{ user.email }}
