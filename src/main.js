@@ -4,8 +4,8 @@ import router from './router'
 import axios from 'axios'
 
 const base = axios.create({
-  // baseURL : 'https://tranquil-atoll-21844.herokuapp.com/'
-   baseURL : 'http://localhost:3000'
+    baseURL: 'https://fierce-scrubland-23566.herokuapp.com'
+        //baseURL : 'http://localhost:3000'
 })
 
 Vue.prototype.$http = base;
@@ -13,6 +13,6 @@ Vue.prototype.$http = base;
 Vue.config.productionTip = false
 
 new Vue({
-  router,
-  render: h => h(App)
+    router,
+    render: h => h(App)
 }).$mount('#app')
