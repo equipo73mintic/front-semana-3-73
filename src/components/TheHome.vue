@@ -1,8 +1,8 @@
 <template>
   <div>
     <nav class="navbar navbar-expand-lg" style="background-color: #4163c7">
-      <a class="navbar-brand" >
-        <span style="color: #FFFFFF">HOME</span>
+      <a class="navbar-brand">
+        <span style="color: #ffffff">HOME</span>
       </a>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -26,9 +26,25 @@
       <div class="card card-body">
         <h3>Bienvenido Usuario</h3>
         <hr />
-
-        <p>Nombre: {{ user.name }}</p>
-        <p>Email: {{ user.email }}</p>
+        <div class="alert alert-primary" role="alert">
+          <span> <strong>Nombre:</strong>  {{ user.name }}</span>
+        </div>
+        <div class="alert alert-primary" role="alert">
+          <span> <strong>Email:</strong>  {{ user.email }}</span>
+        </div>
+           <div class="mt-2">
+            <div class="d-flex justify-content-center links">
+                Ciclo III - Grupo 73
+            </div>
+            <div class="d-flex justify-content-center links">
+                <a
+                href="https://github.com/equipo73mintic/Semana-3-73"
+                target="_blank"
+                >
+                <i class="fab fa-github fa-fw Git-hub"> </i>
+                </a>
+            </div>
+            </div>
       </div>
     </div>
   </div>
