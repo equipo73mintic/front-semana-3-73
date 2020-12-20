@@ -53,6 +53,7 @@
 <script>
 // @ is an alias to /src
 import VueJwtDecode from "vue-jwt-decode";
+import swal from "sweetalert";
 
 export default {
   data() {
@@ -70,10 +71,13 @@ export default {
       }
     },
     logOut() {
+      
       localStorage.removeItem("jwt");
       // localStorage.removeItem('user');
 
       this.$router.push("/");
+       
+      swal("Éxito!", "Gracias por visitarnos", "success");
     },
   },
   created() {
