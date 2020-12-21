@@ -90,10 +90,11 @@ export default {
     };
   },
   methods: {
-    async loginUser() {
+    async loginUser() { 
+      //peticion a este endpoint 
       try {
         let response = await this.$http.post("/api/auth/signin", this.login);
-        console.log(response.data);
+        //console.log(response.data);
 
         let token = response.data.accessToken;
         // let user = response.data.user;
